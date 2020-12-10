@@ -1,6 +1,6 @@
 import java.util.*;
 import javax.crypto.*;
-class Des{
+class Rjindael{
         public static void main(String args[])
         {
                 try{
