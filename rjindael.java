@@ -6,7 +6,7 @@ class Rjindael{
                 try{
                         KeyGenerator kg=KeyGenerator.getInstance("Rjindael");
                         SecretKey skey = kg.generateKey();
-                        Cipher c=Cipher.getInstance("DES");
+                        Cipher c=Cipher.getInstance("Rjindael");
                         c.init(Cipher.ENCRYPT_MODE,skey);
                         byte[] txt = "hi".getBytes();
                         byte[] ntxt = c.doFinal(txt);
