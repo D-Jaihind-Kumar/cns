@@ -6,7 +6,7 @@ class BF{
                 try{
                         KeyGenerator kg=KeyGenerator.getInstance("BlowFish");
                         SecretKey skey = kg.generateKey();
-                        Cipher c=Cipher.getInstance("DES");
+                        Cipher c=Cipher.getInstance("BlowFish");
                         c.init(Cipher.ENCRYPT_MODE,skey);
                         byte[] txt = "hi".getBytes();
                         byte[] ntxt = c.doFinal(txt);
