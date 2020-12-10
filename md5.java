@@ -7,7 +7,7 @@ class MD
     try
     {
       String s= "Hello World";
-      MessageDigest md = MessageDigest.getInstance("MD5);
+      MessageDigest md = MessageDigest.getInstance("MD5");
       byte[] digestInfo = md.digest(s.getBytes());
       BigInteger n = new BigInteger(1,digestInfo);
       String hashtxt = n.toString(16);
