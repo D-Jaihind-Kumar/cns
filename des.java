@@ -1,5 +1,5 @@
 import java.util.*;
-import javax.crypto.*
+import javax.crypto.*;
 class Des{
         public static void main(String args[])
         {
@@ -10,10 +10,8 @@ class Des{
                         c.init(Cipher.ENCRYPT_MODE,skey);
                         byte[] txt = "hi".getBytes();
                         byte[] ntxt = c.doFinal(txt);
-                        System.out.println()
-                        cipher.init(Cipher.DECRYPT_MODE, myKey);
-                        byte[] plainText= cipher.doFinal(encText);
-                        System.out.println(new Strin(plainText));
+                        System.out.println(new String(ntxt));
+                        c.init(Cipher.DECRYPT_MODE, skey);
                 }
                 catch(Exception e)
                 {
